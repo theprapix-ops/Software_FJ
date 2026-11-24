@@ -1,0 +1,136 @@
+2026-11-24 15:28:45,691 - INFO - Cliente registrado: 1001
+2026-11-24 15:28:45,692 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 15:28:45,692 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 15:28:45,692 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 15:28:45,692 - INFO - Reserva creada para el cliente 1001
+2026-11-24 15:28:45,692 - INFO - Reserva 1 confirmada.
+2026-11-24 15:28:45,692 - INFO - Reserva 1 procesada.
+2026-11-24 15:33:33,363 - INFO - Cliente registrado: 1001
+2026-11-24 15:33:33,363 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 15:33:33,364 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 15:33:33,364 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 15:33:33,364 - INFO - Reserva creada para el cliente 1001
+2026-11-24 15:33:33,364 - INFO - Reserva 1 confirmada.
+2026-11-24 15:33:33,364 - INFO - Reserva 1 procesada.
+2026-11-24 15:34:58,491 - INFO - Cliente registrado: 1002
+2026-11-24 15:34:58,491 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 15:34:58,492 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 15:34:58,492 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 15:34:58,492 - INFO - Reserva creada para el cliente 1001
+2026-11-24 15:34:58,492 - ERROR - Error al confirmar una reserva.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 78, in confirmar_reserva
+    resultado = reserva.confirmar()
+  File "C:\Users\fotoc\Software_FJ\modelos\reserva.py", line 26, in confirmar
+    raise ValueError("Solo se pueden confirmar reservas pendientes.")
+ValueError: Solo se pueden confirmar reservas pendientes.
+2026-11-24 15:45:54,132 - INFO - Cliente registrado: 1001
+2026-11-24 15:45:54,132 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 15:45:54,132 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 15:45:54,132 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 15:45:54,132 - INFO - Reserva creada para el cliente 1001
+2026-11-24 15:45:54,132 - INFO - Reserva 1 confirmada.
+2026-11-24 15:45:54,132 - INFO - Reserva 1 procesada.
+2026-11-24 15:48:37,379 - INFO - Cliente registrado: 1002
+2026-11-24 15:48:37,379 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 15:48:37,379 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 15:48:37,380 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 15:48:37,380 - INFO - Reserva creada para el cliente 1002
+2026-11-24 15:48:37,380 - INFO - Reserva 2 confirmada.
+2026-11-24 15:48:37,380 - INFO - Reserva 2 procesada.
+2026-11-24 16:05:21,427 - ERROR - Error al confirmar una reserva.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 78, in confirmar_reserva
+    resultado = reserva.confirmar()
+  File "C:\Users\fotoc\Software_FJ\modelos\reserva.py", line 26, in confirmar
+    raise ValueError("Solo se pueden confirmar reservas pendientes.")
+ValueError: Solo se pueden confirmar reservas pendientes.
+2026-11-24 16:06:13,387 - ERROR - Error al cancelar una reserva.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 89, in cancelar_reserva
+    resultado = reserva.cancelar()
+  File "C:\Users\fotoc\Software_FJ\modelos\reserva.py", line 33, in cancelar
+    raise ValueError("No se puede cancelar esta reserva.")
+ValueError: No se puede cancelar esta reserva.
+2026-11-24 16:10:25,563 - ERROR - Error al procesar una reserva.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 100, in procesar_reserva
+    costo = reserva.procesar()
+  File "C:\Users\fotoc\Software_FJ\modelos\reserva.py", line 40, in procesar
+    raise ValueError("La reserva debe estar confirmada para procesarse.")
+ValueError: La reserva debe estar confirmada para procesarse.
+2026-11-24 16:33:36,348 - INFO - Cliente registrado: 1001
+2026-11-24 16:33:36,348 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 16:33:36,348 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 16:33:36,349 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 16:33:36,349 - INFO - Reserva creada para el cliente 1001
+2026-11-24 16:33:36,349 - INFO - Reserva 1 confirmada.
+2026-11-24 16:33:36,349 - INFO - Reserva 1 procesada.
+2026-11-24 16:33:36,349 - ERROR - Búsqueda de cliente fallida.
+NoneType: None
+2026-11-24 16:33:36,349 - ERROR - Búsqueda de reserva inexistente.
+NoneType: None
+2026-11-24 16:33:36,349 - ERROR - Error al registrar un cliente.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 26, in registrar_cliente
+    raise OperacionInvalidaError(
+        "El cliente ya está registrado."
+    )
+utilidades.excepciones.OperacionInvalidaError: El cliente ya está registrado.
+2026-11-24 16:51:36,333 - INFO - Cliente registrado: 1001
+2026-11-24 16:51:36,333 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 16:51:36,333 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 16:51:36,334 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 16:51:36,334 - INFO - Reserva creada para el cliente 1001
+2026-11-24 16:51:36,334 - INFO - Reserva 1 confirmada.
+2026-11-24 16:51:36,334 - INFO - Reserva 1 procesada.
+2026-11-24 16:51:36,335 - ERROR - Búsqueda de cliente fallida.
+NoneType: None
+2026-11-24 16:51:36,335 - ERROR - Búsqueda de reserva inexistente.
+NoneType: None
+2026-11-24 16:51:36,335 - ERROR - Error al registrar un cliente.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 26, in registrar_cliente
+    raise OperacionInvalidaError(
+        "El cliente ya está registrado."
+    )
+utilidades.excepciones.OperacionInvalidaError: El cliente ya está registrado.
+2026-11-24 16:57:50,781 - INFO - Cliente registrado: 1001
+2026-11-24 16:57:50,781 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 16:57:50,781 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 16:57:50,781 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 16:57:50,781 - INFO - Reserva creada para el cliente 1001
+2026-11-24 16:57:50,781 - INFO - Reserva 1 confirmada.
+2026-11-24 16:57:50,782 - INFO - Reserva 1 procesada.
+2026-11-24 16:57:50,782 - ERROR - Búsqueda de cliente fallida.
+NoneType: None
+2026-11-24 16:57:50,782 - ERROR - Búsqueda de reserva inexistente.
+NoneType: None
+2026-11-24 16:57:50,782 - ERROR - Error al registrar un cliente.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 26, in registrar_cliente
+    raise OperacionInvalidaError(
+        "El cliente ya está registrado."
+    )
+utilidades.excepciones.OperacionInvalidaError: El cliente ya está registrado.
+2026-11-24 16:57:50,783 - ERROR - Búsqueda de cliente fallida.
+NoneType: None
+2026-11-24 16:57:50,783 - ERROR - Error al crear una reserva.
+Traceback (most recent call last):
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 91, in crear_reserva
+    cliente = self.buscar_cliente(identificacion)
+  File "C:\Users\fotoc\Software_FJ\servicios\gestor.py", line 52, in buscar_cliente
+    raise error
+utilidades.excepciones.ClienteNoEncontradoError: No existe el cliente con identificación 9999.
+2026-11-24 17:18:58,005 - INFO - Cliente registrado: 1001
+2026-11-24 17:18:58,005 - INFO - Servicio registrado: Reserva de sala
+2026-11-24 17:18:58,005 - INFO - Servicio registrado: Alquiler de equipos
+2026-11-24 17:18:58,005 - INFO - Servicio registrado: Servicio de asesoría
+2026-11-24 17:18:58,005 - INFO - Reserva creada para el cliente 1001
+2026-11-24 17:18:58,005 - INFO - Reserva 1 confirmada.
+2026-11-24 17:18:58,009 - INFO - Reserva 1 procesada.
+2026-11-24 17:18:58,010 - ERROR - Búsqueda de cliente fallida.
+2026-11-24 17:18:58,010 - ERROR - Búsqueda de reserva inexistente.
+2026-11-24 17:18:58,010 - ERROR - Error al registrar un cliente.
+2026-11-24 17:18:58,011 - ERROR - Búsqueda de cliente fallida.
+2026-11-24 17:18:58,011 - ERROR - Error al crear una reserva.
